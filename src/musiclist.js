@@ -1,6 +1,6 @@
 import {writable} from "svelte/store";
 
-export const musiclist = writable([
+export const musicList = writable([
 {   image: "acdc-back-in-black.jpeg",
     audio: "AC_DC - Back In Black (Official Video) (128kbit_AAC).m4a",
     name: "Back in black",
@@ -9,8 +9,9 @@ export const musiclist = writable([
 {   image: "motorhead-ace-of-spades.jpeg",
     audio: "Motorhead - Ace Of Spades + Lyrics (HQ) (128kbit_AAC).m4a",
     name: "Ace of Spades",
-    artist:
+    artist: "Motorhead"
 },
+
 {
     image: "black-sabbath-the-wizard.jpeg",
     audio:"Black Sabbath _The Wizard_ (128kbit_AAC).m4a",
