@@ -5,6 +5,18 @@ let currentSongIndex = 0;
 let playerState = "play";
 let audioElement;
 let mainElement;
+
+function prev() {
+
+}
+
+function playpause(){
+
+}
+
+function next() {
+
+}
 </script>
 
 <style>
@@ -41,6 +53,24 @@ let mainElement;
 						</button>
 					</div>
 				</div>
+		</div>
+		<div class="song-list">
+			{#each $musicList as music.i}
+				<div
+					class="{i==currentSongIndex ? "active": ""}"
+					on:click="{()=>setSong(i)}"
+				>
+					<div class="avatar">
+						<img src={music.image}>
+						//Should it have been musicList. on line 64, 68 and 69?
+					</div>
+					<div class="song-details">
+						<h2>{music.name}</h2>
+						<p>{music.artist}</p>
+					</div>
+				</div>
+			{/each}
+
 		</div>
 	</div>
 </main>
