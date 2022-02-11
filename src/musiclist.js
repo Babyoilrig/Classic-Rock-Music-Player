@@ -23,7 +23,7 @@ export const musicList = writable([
     audio: "Guns and Roses - Night train (128kbit_AAC).m4a",
     name: "Night Train", 
     artist: "Guns and Roses"
-}
-//Might need a comma after line 25?
+},
+
 ]
 );

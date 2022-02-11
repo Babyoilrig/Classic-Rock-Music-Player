@@ -6,14 +6,16 @@ let playerState = "play";
 let audioElement;
 let mainElement;
 
-function setBackground() {
-	let background = 
-	linear-gradient(rgba(0,0,0,45), rgba(0,0,0,5)),
-	url(../public/files/image/${$musicList[currentSongIndex].image} center  no-repeat)
-	;
+function setBackground(){
+	let background = `
+	linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.5)),
+	url(./files/image/${$musicList[currentSongIndex].image}) center  no-repeat
+	 `;
+	
 	mainElement.style.background = background;
 	mainElement.style.backgroundSize = "cover";
 }
+
 onMount(function(){
 	setBackground();
 })
@@ -61,7 +63,7 @@ function setSong(i) {
 		height: 100%;
 	}
 	audio {
-		display:none;
+		display: none;
 	}
 	.player {
 		position: absolute;
@@ -121,10 +123,10 @@ function setSong(i) {
 
 	.player .song-list {
 		height: calc(100% - 120px);
-		background:rgba(255, 255, 255, 0.8);
+		background:rgba(255, 255, 255, 0.2);
 		box-shadow: 6px 8px 32px 0 rgba(32, 38, 135, 0.2); 
 		backdrop-filter: blur(5px);
-		border: 1px solid white;
+		border: 1px solid rgba(255, 255, 255, 0.4);
 		overflow-y: auto;
 	}
 	.player .song-list::-webkit-scrollbar {
@@ -134,17 +136,18 @@ function setSong(i) {
 
 	.player .song-list::-webkit-scrollbar-thumb {
 	width: 4px;
-	background: #111;
+	/* background: #fff; */
+	background: transparent;
 	}
 
 	.player .song-list > div {
 		display: flex;
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 		cursor: pointer;
 	}
 
 	.player .song-list > div .active {
-		background: rgba(255, 255, 255, 0.8) ;	
+		background: rgba(255, 255, 255, 0.25) ;	
 	}
 
 	.player .song-list > div .avatar {
@@ -171,7 +174,7 @@ function setSong(i) {
 	.player .song-list > div .song-details h2 {
 		font-size: 16px;
 		margin: 0px 0px 2px;
-		color: #111;
+		color: #fff;
 	}
 
 	.player .song-list > div .song-details p {
@@ -191,8 +194,9 @@ function setSong(i) {
 	<div class="player">
 		<div class="current-song">
 			<div class="avatar">
-				<img src={$musicList[currentSongIndex].image}>
-			</div>
+				<!-- svelte-ignore a11y-img-redundant-alt -->
+				<img src={"./files/image/"+$musicList[currentSongIndex].image}>
+			</div> 
 				<div class="song-controls">
 					<h2>{$musicList[currentSongIndex].name}</h2>
 					<div class="controls">
@@ -219,7 +223,7 @@ function setSong(i) {
 					on:click="{()=>setSong(i)}"
 				>
 					<div class="avatar">
-						<img src={music.image} alt="avatar">
+						<img src={"./files/image/"+music.image} alt="avatar">
 					</div>
 					<div class="song-details">
 						<h2>{music.name}</h2>
