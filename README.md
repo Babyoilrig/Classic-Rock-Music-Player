@@ -31,11 +31,11 @@ Next, run the command Npm Start - to run the app.
  
 **Features**
 -----------------
-*Choose from a variety of classic rock songs, and press the play button to play them.
+* Choose from a variety of classic rock songs, and press the play button to play them.
 <br/><br/>
-*See the background change as you move through the songs.
+* See the background change as you move through the songs.
 <br/><br/>
-*Scroll down on the player to see more songs.
+* Scroll down on the player to see more songs.
 <br/><br/>
  
 **Feedback**
