@@ -10,7 +10,7 @@ I created this player following a tutorial as I was interested to learn more abo
 
 **Author**
 --------------
-[@CatrinMentzoni] (https://github.com/Babyoilrig)
+[@CatrinMentzoni](https://github.com/Babyoilrig)
  
 **Installation**
 -----------------
@@ -37,7 +37,7 @@ Next, run the command Npm Start - to run the app.
  
 **Feedback**
 -----------------
-If you have any feedback, please raise an issue in the issues tab or reach out to me at [@Babyoilrig] (https://github.com/Babyoilrig) here on Github or [@CatrinMentzoni] (https://www.linkedin.com/in/catrin-mentzoni/) 
+If you have any feedback, please raise an issue in the issues tab or reach out to me at [@Babyoilrig](https://github.com/Babyoilrig) here on Github or [@CatrinMentzoni] (https://www.linkedin.com/in/catrin-mentzoni/) 
  
  
  
