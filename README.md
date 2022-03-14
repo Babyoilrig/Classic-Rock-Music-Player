@@ -1,7 +1,7 @@
 Classic Rock Music Player
 ===========
 
-<img src="https://user-images.githubusercontent.com/93347177/158150448-7a46471c-407f-4a53-b9a0-81cb4bc56a50.PNG" width="500px"><br/>
+<img src="https://user-images.githubusercontent.com/93347177/158150448-7a46471c-407f-4a53-b9a0-81cb4bc56a50.PNG" width="600px"><br/>
 
 This is a music player which allows users to play a selection of classic rock songs. When each song is played, the background changes to the album artwork of the song.
 
